@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "937977966851",
+    "project_id": "hcmute-smart-access",
+    "storage_bucket": "hcmute-smart-access.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937977966851:android:4f15f754215f653f36b936",
+        "android_client_info": {
+          "package_name": "com.hcmute.smartaccess"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgAtWbq5ch_goF8Z9rkxUpuyNU3P0RxxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
