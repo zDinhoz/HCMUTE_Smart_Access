@@ -958,6 +958,14 @@ Các hướng cải tiến:
 
 ---
 
+## Báo cáo đồ án
+
+Báo cáo đầy đủ của đề tài **HCM-UTE Smart Access – Hệ thống quản lý ra vào phòng học sử dụng vân tay và thẻ NFC**:
+
+[📄 Xem báo cáo HCM-UTE Smart Access](docs/Report_Final_Di_động.pdf)
+
+---
+
 ## HCM-UTE Smart Access
 
 **Android + Firebase + ESP32 + NFC + Fingerprint**
