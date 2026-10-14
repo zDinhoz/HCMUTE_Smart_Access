@@ -19,21 +19,37 @@ The Android application is developed using **Kotlin + Jetpack Compose**.
 ## System Architecture
 
 ```text
-Android Application
-        │
-        ▼
-Firebase Authentication
-Cloud Firestore
-        │
-        ▼
-ESP32_A102
-   │          │
-   ▼          ▼
-RC522     Fingerprint
-   │          │
-   └────┬─────┘
-        ▼
-   Servo / Door
+          ┌─────────────────────────┐
+          │   Android Application   │
+          │ Kotlin + Jetpack Compose│
+          └────────────┬────────────┘
+                       │
+                       ▼
+          ┌─────────────────────────┐
+          │ Firebase Authentication │
+          │    Cloud Firestore      │
+          └────────────┬────────────┘
+                       │
+                       ▼
+          ┌─────────────────────────┐
+          │       ESP32_A102        │
+          │    Access Controller    │
+          └───────────┬─────────────┘
+                      │
+              ┌───────┴───────┐
+              │               │
+              ▼               ▼
+       ┌────────────┐   ┌──────────────┐
+       │ RC522 NFC  │   │ Fingerprint  │
+       │   Reader   │   │    Sensor    │
+       └──────┬─────┘   └──────┬───────┘
+              │                │
+              └───────┬────────┘
+                      │
+                      ▼
+               ┌────────────┐
+               │Servo / Door│
+               └────────────┘
 ```
 
 The Android application does not directly control the door.  
